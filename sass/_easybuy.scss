@@ -1,0 +1,307 @@
+
+
+.pj{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @media (max-width:56.25em){
+        flex-direction: column;
+    }
+    
+
+    &__con1{
+        width: 80%;
+        padding: 2rem;
+        background-color: whitesmoke;
+        margin-right: 2rem;
+
+        @media (max-width:56.25em){
+            width: 100%;
+            margin-right: 0rem;
+        }
+
+    }
+    &__con2{
+        position: relative;
+        width: 30%;
+
+        @media (max-width:56.25em){
+            margin-bottom: 10rem;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            top: 5rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+        @media (max-width:48em){
+           margin-bottom: 20rem;
+           flex-direction: column;
+           margin-top: 5rem;
+        }
+        
+    }
+
+    &__con3{
+        flex-direction: column;
+        display: flex;
+        margin-top: 5rem;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+
+        @media (max-width:56.25em){
+            margin-top: 0rem;
+        }
+
+        @media (max-width:48em){
+            width: 50%;
+            right: 0rem;
+            top: 5rem;
+            position: relative;
+         }
+         @media (max-width:37.50em){
+            width: 100%;
+            right: 0rem;
+            top: 5rem;
+            position: relative;
+              
+          }
+    }
+
+    
+    &__con4{
+        margin-top: 5rem;
+        display: block;
+        position: relative;
+        background-color: whitesmoke;
+        padding: 2rem 2rem;
+
+        @media (max-width:56.25em){
+            margin-top: 0rem;
+            right: 0rem;
+            
+        }
+
+        
+        @media (max-width:48em){
+          position: absolute;
+          right: 0rem;
+          top: 28rem;
+            
+        }
+        @media (max-width:37.50em){
+            position: relative;
+            width: 100%;
+            top: 5rem;
+              
+          }
+    }
+
+
+   
+    &__con4 li{
+        font-size: 1.8rem;
+        color: crimson;
+        margin: 1.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }   
+
+
+    &__header{
+        color: teal;
+        font-size: 2rem;
+        border-bottom: solid rgb(228, 228, 228) 0.05rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__title{
+        color: teal;
+        font-size: 2rem;
+        border-bottom: solid rgb(228, 228, 228) 0.05rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    &__text{
+        margin: 2rem 0rem;
+        font-size: 1.8rem;
+    }
+
+    &__img-con{
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem;
+        margin: 0rem;
+        // background-color: #222;
+
+          
+        @media (max-width:48em){
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+          }
+    }
+    &__img{
+        height: 50vh;
+        width: 48%;
+        margin: 1rem 0rem;
+
+            
+        @media (max-width:48em){
+            height: 70vh;
+          width: 75%;
+          }
+
+          @media (max-width:37.50em){
+            height: 60vh;
+             width: 85%;
+          }
+
+
+          @media (max-width:26.75em){
+            height: 40vh;
+            width: 100%;
+          }
+    }
+}
+
+.servicelogo{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+.s-links{
+    width: 100%;
+    position: relative;
+    margin: 1rem 0rem;
+    display: flex;
+    left: 0rem;
+    font-size: 1.5rem;
+    // background-color: whitesmoke;
+   
+}
+.s-links-icons{
+    display: block;
+    height: 3rem;
+   margin-right: 3rem;
+
+}
+.s-next{
+    font-size: 1.5rem;
+    position: relative;
+    opacity: 100%;
+    right: 0rem;
+    top:-.2rem;
+    display: block;
+    cursor: pointer;
+    color: #000;
+
+}
+
+
+///////////////////////////////////////////////////////////////////////
+
+.wd-card{
+ 
+
+   
+        margin:0rem;
+        background-color:whitesmoke;
+        border-radius: .5rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position-y: 5rem;
+        background-size: 60%;
+
+        // @media (max-width:56.25em){
+        //     width: 30%;
+        // }
+
+        
+
+    
+
+    
+    &__con:hover > &__box{
+       display: flex;
+
+    }
+
+    &__box{
+        position: relative;
+        background-color: rgb(42, 38, 38);
+        // height: 25vh;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        transition: animation ease-in-out 1s;
+        animation: slideup .3s;
+        // display: none;
+ 
+    }
+    &__title{
+        font-size: 2rem;
+         margin-bottom: 1rem;
+         font-weight: 600;
+         letter-spacing: .2rem;
+         text-transform: uppercase;
+         color: teal;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+    }
+
+    &__btn{
+        padding: 1rem 6rem;
+        margin-top: 2rem;
+        border-radius: .5rem;
+        border: none;
+        background-color: rgb(19, 28, 35);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        &:hover{
+            background-color: rgb(98, 101, 105);
+        }
+
+    }
+
+    
+    &__btn-text{
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    &__next{
+        font-size: 2rem;
+        position: relative;
+        opacity: 100%;
+        right: -5rem;
+        top:0rem;
+        color: #ffc000;
+        display: block;
+        cursor: pointer;
+
+    }
+
+}

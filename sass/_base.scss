@@ -1,0 +1,88 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Jost', sans-serif;
+
+    @media (max-width: 75em){/////1200
+        font-size: 54.5%;
+    }
+
+    @media (max-width:64em){/////////1024px
+        font-size: 51.5%;
+    }
+    @media (max-width:56.25em){ //////900px
+        font-size: 58.5%;
+    }
+
+    @media (max-width:48em){///////////768px
+        font-size: 54.5%;
+    }
+
+    // @media (max-width: 37.50em){///////////600px
+    //     font-size: 55.5%;
+    // }
+
+    // @media (max-width:26.75em){///////////428px
+    //     font-size: 44.5%;
+    // }
+
+       // @media (max-width:23.438em){///////////375px
+    //     font-size: 44.5%;
+    // }
+
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.809);
+    font-size: 62.5%;
+    font-family: 'Jost', sans-serif;
+    line-height: 2.8rem;
+
+
+}
+
+button{
+    box-shadow: 0rem 0.1rem .2rem .1rem rgba(0, 0, 0, 0.802);
+    outline: none;
+    transition: ease-in-out 0.2s ;
+    
+    &:active{
+        transform: scale(0.95);
+    }
+
+}
+
+
+
+
+main{ 
+    
+    margin: 0rem 15rem;
+
+    @media (max-width:87.50em){/////1400
+        margin: 0rem 10em;
+    }
+    @media (max-width: 75em){/////1200
+        margin: 0rem 8rem;
+    }
+    @media (max-width:64em){/////1024
+        margin: 0rem 5rem;
+    }
+    @media (max-width:56.25em){ //////900
+        margin: 0rem 4rem;
+    }
+    @media (max-width:37.50em){////600
+        margin: 0rem 0rem;}
+
+}
+

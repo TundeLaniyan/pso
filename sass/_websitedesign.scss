@@ -1,0 +1,153 @@
+.websitedesign{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    @media (max-width:26.75em){
+      flex-direction: column;
+
+    }
+    
+
+    &__con1{
+        width: 65%;
+        padding: 2rem;
+        background-color: whitesmoke;
+
+        @media (max-width:37.50em){
+            width: 60%;
+            padding: 1rem;
+          
+          }
+        
+         @media (max-width:26.75em){
+        width: 100%;
+      }
+      
+  
+    }
+    &__con2{
+        position: relative;
+        width: 30%;
+
+        @media (max-width:37.50em){
+            width: 37%;
+          }
+
+        @media (max-width:26.75em){
+            width: 100%;
+            padding: 2rem;
+          }
+    }
+
+    &__con3{
+        margin-top: 5rem;
+        display: block;
+        position: relative;
+        background-color: whitesmoke;
+        padding: 2rem 2rem;
+
+        @media (max-width:48em){
+            padding: 2rem 0rem;
+          }
+        
+
+    }
+
+    &__con3 ul{
+        list-style: none;
+    }
+    &__con3 li{
+        font-size: 1.8rem;
+    color: crimson;
+    margin: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+    &__header{
+        color: teal;
+        font-size: 2.2rem;
+        border-bottom: solid rgb(223, 223, 223) 0.05rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        padding: 1rem;
+        font-weight: 600;
+        text-align: left;
+
+    }
+    &__text{
+        margin: 2rem 0rem;
+        font-size: 1.8rem;
+       
+    }
+    &__img{
+        height: 40vh;
+        width: 100%;
+        // background-image: url(img/pexels-ovan-57690.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        margin: 5rem auto;
+        align-self: center;
+        display: block;
+    }
+}
+
+.servicelogo{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+
+.s-links{
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    // text-transform: uppercase;
+    display: block;
+    position: absolute;
+    // font-size: .5rem;
+    left: 9rem;
+    color: black;
+
+    &:hover{
+        color: grey;
+        padding-left: .5rem;
+    }
+}
+
+.s-next{
+    font-size: 1.5rem;
+    position: relative;
+    opacity: 100%;
+    right: 0rem;
+    top:-.2rem;
+    display: block;
+    cursor: pointer;
+    color: #000;
+
+}
+
+
+///////////////////////////////////////////////////////////////////////
+
+.wd-card{
+    
+        // width: 90%;
+        // height: 60vh;
+        margin:1rem;
+        border-radius: 1.8rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size: 60%;
+    }
+

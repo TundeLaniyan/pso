@@ -1,0 +1,109 @@
+.planner{
+    width: 60%;
+    position: relative;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width:56.25em){
+        width: 80%;
+    }
+
+
+    @media(max-width:37.5em){
+        width: 100%;
+    }
+
+    &__top{
+    width:100%;
+    background-image: url(img/pp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 8rem;
+    border-radius: .4rem;
+
+    @media(max-width: 26.75em){
+        padding: 2rem 1rem;
+    }
+
+    
+    }
+
+    &__box{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    &__smaller-box{
+        display: flex;
+        align-items: center;
+        margin-right: 3rem;
+    }
+
+
+    &__checkbox{
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        display: block;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    &__checkbox-text{
+       
+        font-size: 1.6rem;
+    }
+    &__title{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &__para{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    &__con{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    &__heading{
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    &__text{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    &__small-text{
+        font-size: 1.2rem;
+    }
+    &__input{
+        height: 5rem;
+        margin-bottom: 3rem;
+
+    }
+    &__textarea{
+        margin-bottom: 2rem;
+
+    }
+    
+
+}
+
+.planner button {
+    background-color: #ffc000;
+    width: 25%;
+    margin:5rem auto ;
+    padding: 1.5rem;
+    border: none;
+    border-radius: .4rem;
+}

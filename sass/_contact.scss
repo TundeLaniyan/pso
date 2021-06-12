@@ -1,0 +1,150 @@
+
+
+.contact{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    border-radius: 1.5rem;
+    top: 5rem;
+    position: relative;
+    margin: 0rem auto;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    background-image: linear-gradient(#021731, #000000ad), url(img/picca.jpg);
+
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 4rem;
+    margin-bottom: 30rem;
+    &:nth-child(2){
+        flex-direction: row-reverse;
+
+    }
+
+    @media (max-width:48em){
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 15rem;
+          }
+
+          @media (max-width:37.50em){
+           border-radius: 0;
+                 }
+       
+
+    
+    &__con{
+     width: 80%;
+     padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+        @media (max-width:56.25em){
+        padding: 0rem;
+          }
+          @media (max-width:48em){
+            margin-right: 0rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+                 }
+
+    }
+
+    &__title{
+        text-align: left;
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 2.5rem;
+        color: #ffc000;
+
+            @media (max-width:56.25em){
+                font-size: 4rem;
+                text-align: center;
+          }
+
+
+    }
+
+    &__para{
+        text-align: left;
+        font-size: 1.5rem;
+        color: white;
+        
+        @media (max-width:56.25em){
+            text-align: center;
+      }
+
+    }
+
+    &__con2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // background-image: url(img/pp.png);
+        // background-repeat: no-repeat;
+        // background-position:center;
+        // background-size: cover;
+        background-color: white;
+        padding: 4rem 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0rem 0rem 1rem 0.1rem #00000021;
+    }
+
+    &__input{
+        background-color: transparent;
+        border-style: none;
+        border-bottom: rgb(236, 236, 236) solid .1rem;
+        margin: 1rem 0rem;
+        width: 100%;
+        font-size: 1.8rem;
+        outline: none;
+        height: 4rem;
+        color: black;
+        font-family: 'Jost', sans-serif;
+    }
+
+    &__message{
+      border: none;
+      background-color: transparent;
+      border-bottom: black solid .2rem;
+      outline: none;
+      width: 100%;
+      font-family: 'Jost', sans-serif;
+      font-size: 1.8rem;
+      padding: .5rem 0rem;
+      border-bottom: rgb(236, 236, 236) solid .1rem;
+
+
+    
+     
+    }
+
+    &__btn{
+        padding: 1.5rem 4rem;
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 0.4rem;
+        position: relative;
+        top: 2rem;
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Jost', sans-serif;
+
+        &:hover{
+            background-color: #ffc000;;
+        }
+
+        
+
+
+    }
+   
+}
